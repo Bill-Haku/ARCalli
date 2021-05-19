@@ -15,6 +15,13 @@
 		BFD748852640EFD200B677F3 /* ARCalli.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFD748832640EFD200B677F3 /* ARCalli.xcdatamodeld */; };
 		BFD748902640EFD200B677F3 /* ARCalliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7488F2640EFD200B677F3 /* ARCalliTests.swift */; };
 		BFD7489B2640EFD200B677F3 /* ARCalliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7489A2640EFD200B677F3 /* ARCalliUITests.swift */; };
+		BFEDEF0726552775000E6052 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDEF0626552775000E6052 /* HomePageView.swift */; };
+		BFEDEF0926552787000E6052 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDEF0826552787000E6052 /* CommunityView.swift */; };
+		BFEDEF0B2655280C000E6052 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDEF0A2655280C000E6052 /* NewItemView.swift */; };
+		BFEDEF0D26552824000E6052 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDEF0C26552824000E6052 /* FollowingView.swift */; };
+		BFEDEF0F2655282D000E6052 /* MyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDEF0E2655282D000E6052 /* MyInfoView.swift */; };
+		BFEDEF112655299B000E6052 /* CardUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDEF102655299B000E6052 /* CardUnitView.swift */; };
+		BFEDEF13265529FF000E6052 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDEF12265529FF000E6052 /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		BFD748962640EFD200B677F3 /* ARCalliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCalliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD7489A2640EFD200B677F3 /* ARCalliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCalliUITests.swift; sourceTree = "<group>"; };
 		BFD7489C2640EFD200B677F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFEDEF0626552775000E6052 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		BFEDEF0826552787000E6052 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		BFEDEF0A2655280C000E6052 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		BFEDEF0C26552824000E6052 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
+		BFEDEF0E2655282D000E6052 /* MyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoView.swift; sourceTree = "<group>"; };
+		BFEDEF102655299B000E6052 /* CardUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUnitView.swift; sourceTree = "<group>"; };
+		BFEDEF12265529FF000E6052 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,11 @@
 		BFD748772640EFD000B677F3 /* ARCalli */ = {
 			isa = PBXGroup;
 			children = (
+				BFEDEF0126552370000E6052 /* HomePage */,
+				BFEDEF0226552384000E6052 /* Community */,
+				BFEDEF0326552459000E6052 /* NewItem */,
+				BFEDEF0426552461000E6052 /* Following */,
+				BFEDEF0526552561000E6052 /* MyInfo */,
 				BFD748782640EFD000B677F3 /* ARCalliApp.swift */,
 				BFD7487A2640EFD000B677F3 /* ContentView.swift */,
 				BFD7487C2640EFD200B677F3 /* Assets.xcassets */,
@@ -134,6 +153,48 @@
 				BFD7489C2640EFD200B677F3 /* Info.plist */,
 			);
 			path = ARCalliUITests;
+			sourceTree = "<group>";
+		};
+		BFEDEF0126552370000E6052 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				BFEDEF12265529FF000E6052 /* HomePage.swift */,
+				BFEDEF0626552775000E6052 /* HomePageView.swift */,
+				BFEDEF102655299B000E6052 /* CardUnitView.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		BFEDEF0226552384000E6052 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				BFEDEF0826552787000E6052 /* CommunityView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		BFEDEF0326552459000E6052 /* NewItem */ = {
+			isa = PBXGroup;
+			children = (
+				BFEDEF0A2655280C000E6052 /* NewItemView.swift */,
+			);
+			path = NewItem;
+			sourceTree = "<group>";
+		};
+		BFEDEF0426552461000E6052 /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				BFEDEF0C26552824000E6052 /* FollowingView.swift */,
+			);
+			path = Following;
+			sourceTree = "<group>";
+		};
+		BFEDEF0526552561000E6052 /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BFEDEF0E2655282D000E6052 /* MyInfoView.swift */,
+			);
+			path = MyInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +327,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD748852640EFD200B677F3 /* ARCalli.xcdatamodeld in Sources */,
+				BFEDEF13265529FF000E6052 /* HomePage.swift in Sources */,
 				BFD748822640EFD200B677F3 /* Persistence.swift in Sources */,
+				BFEDEF0D26552824000E6052 /* FollowingView.swift in Sources */,
+				BFEDEF0B2655280C000E6052 /* NewItemView.swift in Sources */,
+				BFEDEF0F2655282D000E6052 /* MyInfoView.swift in Sources */,
+				BFEDEF0926552787000E6052 /* CommunityView.swift in Sources */,
 				BFD7487B2640EFD000B677F3 /* ContentView.swift in Sources */,
 				BFD748792640EFD000B677F3 /* ARCalliApp.swift in Sources */,
+				BFEDEF112655299B000E6052 /* CardUnitView.swift in Sources */,
+				BFEDEF0726552775000E6052 /* HomePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

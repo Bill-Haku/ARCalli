@@ -17,7 +17,17 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        List {
+        TabView {
+            HomePageView()
+                .tabItem {
+                    Text("主页")
+                }
+            CommunityView()
+                .tabItem {
+                    Text("社区")
+                }
+        }
+        /*List {
             ForEach(items) { item in
                 Text("Item at \(item.timestamp!, formatter: itemFormatter)")
             }
@@ -31,7 +41,7 @@ struct ContentView: View {
             Button(action: addItem) {
                 Label("Add Item", systemImage: "plus")
             }
-        }
+        }*/
     }
 
     private func addItem() {
