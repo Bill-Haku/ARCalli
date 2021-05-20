@@ -1,7 +1,7 @@
 //
 //  HomePage.swift
 //  ARCalli
-//
+//  主页卡片中用到的类
 //  Created by Bill Haku on 2021/5/19.
 //
 

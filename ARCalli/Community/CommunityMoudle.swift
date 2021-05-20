@@ -1,13 +1,14 @@
 //
 //  CommunityMoudle.swift
 //  ARCalli
-//
+//  社区页卡片中用到的类
 //  Created by Bill Haku on 2021/5/20.
 //
 
 import Foundation
 import SwiftUI
 
+// 用户类
 class userStruct: ObservableObject {
     @Published var headimage: UIImage?
     @Published var name: String
@@ -19,6 +20,7 @@ class userStruct: ObservableObject {
 }
 var defaultUser = userStruct(headimage: nil, name: "admin")
 
+// 卡片类
 class PostStruct: ObservableObject {
     @Published var coverImage: UIImage?
     @Published var title: String

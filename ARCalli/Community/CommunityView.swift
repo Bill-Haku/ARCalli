@@ -1,7 +1,7 @@
 //
 //  CommunityView.swift
 //  ARCalli
-//
+//  社区动态主界面
 //  Created by Bill Haku on 2021/5/19.
 //
 

@@ -1,7 +1,7 @@
 //
 //  PostCellView.swift
 //  ARCalli
-//
+//  社区动态中卡片的View
 //  Created by Bill Haku on 2021/5/20.
 //
 

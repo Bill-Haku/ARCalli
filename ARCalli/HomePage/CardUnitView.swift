@@ -1,7 +1,7 @@
 //
 //  CardUnitView.swift
 //  ARCalli
-//
+//  今日推荐中卡片的View
 //  Created by Bill Haku on 2021/5/19.
 //
 
@@ -11,6 +11,7 @@ struct CardUnitView: View {
     var cardUnit: HomePageCardUnit
     var body: some View {
         VStack {
+            // 头图
             if (cardUnit.coverImage != nil) {
                 Image(uiImage: cardUnit.coverImage!)
                     .resizable()
@@ -23,15 +24,18 @@ struct CardUnitView: View {
             }
             HStack {
                 VStack(alignment: .leading) {
+                    // 小标题
                     Text(cardUnit.type)
                         .font(.footnote)
                         .foregroundColor(.secondary)
+                    // 主标题
                     Text(cardUnit.title)
                         .font(.title)
                         .fontWeight(.black)
                         .foregroundColor(.primary)
                         .lineLimit(3)
                         .frame(height: 50)
+                    // 副标题
                     Text(cardUnit.subtitle)
                         .foregroundColor(.secondary)
                 }
