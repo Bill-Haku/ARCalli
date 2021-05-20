@@ -1,6 +1,6 @@
 # AR Calligraphy
 
-## 版本Post记录
+## 版本Push记录
 
 1 新建工程
 
