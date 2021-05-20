@@ -17,7 +17,7 @@ struct CardUnitView: View {
                     .aspectRatio(contentMode: .fit)
             }
             else {
-                Image("CalliEg2")
+                Image("SingleDog")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
@@ -47,7 +47,6 @@ struct CardUnitView: View {
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 2)
         )
         .padding([.top, .horizontal])
-
     }
 }
 
