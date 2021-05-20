@@ -17,20 +17,21 @@ struct CardUnitView: View {
                     .aspectRatio(contentMode: .fit)
             }
             else {
-                Image("CalliEg")
+                Image("CalliEg2")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
             HStack {
                 VStack(alignment: .leading) {
                     Text(cardUnit.type)
-                        .font(.headline)
+                        .font(.footnote)
                         .foregroundColor(.secondary)
                     Text(cardUnit.title)
                         .font(.title)
                         .fontWeight(.black)
                         .foregroundColor(.primary)
                         .lineLimit(3)
+                        .frame(height: 50)
                     Text(cardUnit.subtitle)
                         .foregroundColor(.secondary)
                 }
