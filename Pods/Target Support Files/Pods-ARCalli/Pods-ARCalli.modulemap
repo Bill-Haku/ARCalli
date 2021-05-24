@@ -1,0 +1,6 @@
+framework module Pods_ARCalli {
+  umbrella header "Pods-ARCalli-umbrella.h"
+
+  export *
+  module * { export * }
+}

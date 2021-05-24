@@ -14,12 +14,11 @@ struct CommunityView: View {
         UITableView.appearance().separatorStyle = .none
     }
     
+    @State private var cards: [PostStruct] = postCards
+    
     var body: some View {
         NavigationView {
-            List {
-                PostCellView(Post: defaultPost)
-                    .listRowBackground(Color(red: 233/255, green: 227/255, blue: 216/255).edgesIgnoringSafeArea(.all))
-            }
+            CommunityCardsGrid(postCards: $cards)
             .navigationBarTitle(Text("社区动态"))
             .background(Color(red: 233/255, green: 227/255, blue: 216/255).edgesIgnoringSafeArea(.all))
         }

@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E99491BC55314D363C4C1D2 /* Pods_ARCalli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3457D0C2A2A17445E72BF73E /* Pods_ARCalli.framework */; };
 		BF16283526564B06001118AA /* CommunityMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16283426564B06001118AA /* CommunityMoudle.swift */; };
 		BF16283726564C92001118AA /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16283626564C92001118AA /* PostCellView.swift */; };
 		BF16283926567D8B001118AA /* CommunityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16283826567D8B001118AA /* CommunityFunctions.swift */; };
+		BF66FF60265BA51700BB17F4 /* CommunityCardsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66FF5F265BA51700BB17F4 /* CommunityCardsGrid.swift */; };
 		BFD748792640EFD000B677F3 /* ARCalliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD748782640EFD000B677F3 /* ARCalliApp.swift */; };
 		BFD7487B2640EFD000B677F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7487A2640EFD000B677F3 /* ContentView.swift */; };
 		BFD7487D2640EFD200B677F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD7487C2640EFD200B677F3 /* Assets.xcassets */; };
@@ -45,9 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3457D0C2A2A17445E72BF73E /* Pods_ARCalli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCalli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799EADA0353EE2D5C93B1EDC /* Pods-ARCalli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCalli.release.xcconfig"; path = "Target Support Files/Pods-ARCalli/Pods-ARCalli.release.xcconfig"; sourceTree = "<group>"; };
 		BF16283426564B06001118AA /* CommunityMoudle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMoudle.swift; sourceTree = "<group>"; };
 		BF16283626564C92001118AA /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
 		BF16283826567D8B001118AA /* CommunityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityFunctions.swift; sourceTree = "<group>"; };
+		BF66FF5F265BA51700BB17F4 /* CommunityCardsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCardsGrid.swift; sourceTree = "<group>"; };
 		BFD748752640EFD000B677F3 /* ARCalli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCalli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD748782640EFD000B677F3 /* ARCalliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCalliApp.swift; sourceTree = "<group>"; };
 		BFD7487A2640EFD000B677F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 		BFEDEF0E2655282D000E6052 /* MyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoView.swift; sourceTree = "<group>"; };
 		BFEDEF102655299B000E6052 /* CardUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUnitView.swift; sourceTree = "<group>"; };
 		BFEDEF12265529FF000E6052 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		FDACB2C0E7E8827E84FF4168 /* Pods-ARCalli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCalli.debug.xcconfig"; path = "Target Support Files/Pods-ARCalli/Pods-ARCalli.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E99491BC55314D363C4C1D2 /* Pods_ARCalli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A02DCDB9F48FB8BAAF356FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDACB2C0E7E8827E84FF4168 /* Pods-ARCalli.debug.xcconfig */,
+				799EADA0353EE2D5C93B1EDC /* Pods-ARCalli.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		41F0004E0299B843D2AB9444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3457D0C2A2A17445E72BF73E /* Pods_ARCalli.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFD7486C2640EFD000B677F3 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +127,8 @@
 				BFD7488E2640EFD200B677F3 /* ARCalliTests */,
 				BFD748992640EFD200B677F3 /* ARCalliUITests */,
 				BFD748762640EFD000B677F3 /* Products */,
+				2A02DCDB9F48FB8BAAF356FC /* Pods */,
+				41F0004E0299B843D2AB9444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +202,7 @@
 			children = (
 				BF16283426564B06001118AA /* CommunityMoudle.swift */,
 				BFEDEF0826552787000E6052 /* CommunityView.swift */,
+				BF66FF5F265BA51700BB17F4 /* CommunityCardsGrid.swift */,
 				BF16283626564C92001118AA /* PostCellView.swift */,
 				BF16283826567D8B001118AA /* CommunityFunctions.swift */,
 			);
@@ -213,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFD7489F2640EFD200B677F3 /* Build configuration list for PBXNativeTarget "ARCalli" */;
 			buildPhases = (
+				F44AB51237FB7C492C17D7C8 /* [CP] Check Pods Manifest.lock */,
 				BFD748712640EFD000B677F3 /* Sources */,
 				BFD748722640EFD000B677F3 /* Frameworks */,
 				BFD748732640EFD000B677F3 /* Resources */,
+				E8E1E4E8485D6CBF3AA904E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,12 +359,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E8E1E4E8485D6CBF3AA904E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARCalli/Pods-ARCalli-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARCalli/Pods-ARCalli-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARCalli/Pods-ARCalli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44AB51237FB7C492C17D7C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCalli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFD748712640EFD000B677F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BFD748852640EFD200B677F3 /* ARCalli.xcdatamodeld in Sources */,
+				BF66FF60265BA51700BB17F4 /* CommunityCardsGrid.swift in Sources */,
 				BFEDEF13265529FF000E6052 /* HomePage.swift in Sources */,
 				BFD748822640EFD200B677F3 /* Persistence.swift in Sources */,
 				BFEDEF0D26552824000E6052 /* FollowingView.swift in Sources */,
@@ -502,6 +574,7 @@
 		};
 		BFD748A02640EFD200B677F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDACB2C0E7E8827E84FF4168 /* Pods-ARCalli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -524,6 +597,7 @@
 		};
 		BFD748A12640EFD200B677F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799EADA0353EE2D5C93B1EDC /* Pods-ARCalli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

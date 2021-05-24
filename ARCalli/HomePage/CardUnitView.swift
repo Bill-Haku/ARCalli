@@ -18,7 +18,7 @@ struct CardUnitView: View {
                     .aspectRatio(contentMode: .fit)
             }
             else {
-                Image("SingleDog")
+                Image("CalliEg2")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }

@@ -36,4 +36,8 @@ class PostStruct: ObservableObject {
         self.commentNum = likeNum
     }
 }
-var defaultPost = PostStruct(coverImage: nil, title: "毛笔的选用方法", user: defaultUser, likeNum: 163, commentNum: 41)
+//  几个测试用例
+var defaultPost1 = PostStruct(coverImage: nil, title: "毛笔的选用方法", user: defaultUser, likeNum: 163, commentNum: 41)
+var defaultPost2 = PostStruct(coverImage: UIImage(named: "CalliEg2"), title: "毛笔的选用方法啊个肚饿好讽刺啊鹅好的UI啊好多遍", user: defaultUser, likeNum: 56, commentNum: 1)
+var defaultPost3 = PostStruct(coverImage: UIImage(named: "CalliEg"), title: "毛笔的选用方法啊鹅湖举办的二哥", user: defaultUser, likeNum: 7163, commentNum: 415)
+var postCards:[PostStruct] = [defaultPost1, defaultPost2, defaultPost3]
