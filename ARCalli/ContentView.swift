@@ -26,6 +26,10 @@ struct ContentView: View {
                 .tabItem {
                     Text("社区")
                 }
+            NewItemView()
+                .tabItem {
+                    Text("+")
+                }
         }
         /*List {
             ForEach(items) { item in
