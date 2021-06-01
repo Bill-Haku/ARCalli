@@ -8,50 +8,73 @@
 import SwiftUI
 
 struct NewItemView: View {
+    var screenWidth = UIScreen.main.bounds.width
+    var screenHeight = UIScreen.main.bounds.height
+    
+    var tabButtons: some View {
+        HStack {
+            VStack {
+                Button(action: {}, label: {
+                    Image("comeback")
+                    Text("返回")
+                })
+                Spacer()
+            }
+            VStack {
+                Spacer()
+                Button(action: {}, label: {
+                    Image("writing")
+                    Text("书写")
+                })
+            }
+            VStack {
+                Button(action: {}, label: {
+                    Image("cancel")
+                    Text("擦除")
+                })
+                Spacer()
+            }
+            VStack {
+                Spacer()
+                Button(action: {}, label: {
+                    Image("bold")
+                    Text("笔势")
+                })
+            }
+            Spacer()
+        }
+        .padding()
+    }
+    
     var body: some View {
         VStack {
             ZStack {
-                HStack {
-                    VStack {
-                        Button(action: {}, label: {
-                            Text("返回")
-                        })
-                        Spacer()
-                    }
-                    VStack {
-                        Spacer()
-                        Button(action: {}, label: {
-                            Text("书写")
-                        })
-                    }
-                    VStack {
-                        Button(action: {}, label: {
-                            Text("擦除")
-                        })
-                        Spacer()
-                    }
-                    VStack {
-                        Spacer()
-                        Button(action: {}, label: {
-                            Text("笔势")
-                        })
-                    }
-                    Spacer()
-                }
-                .padding()
+                Image("backgroundTab")
+                    .resizable()
+                    .frame(width: screenWidth, height: screenHeight/7)
+                tabButtons
+                    .padding(30)
+                    .foregroundColor(.black)
             }
             Spacer()
             Image("")
                 .resizable()
-                .frame(height: 1000)
+                .frame(height: 700)
             HStack {
                 Spacer()
-                Button(action: {}, label: {
-                    Text("AR")
-                })
-                .padding()
+                ZStack {
+                    Image("backgroundAR")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                    Button(action: {}, label: {
+                        Image("letterAR")
+                    })
+                    .padding()
+                }
+                
             }
         }
+        .background(Color(red: 233/255, green: 227/255, blue: 216/255).edgesIgnoringSafeArea(.all))
     }
 }
 

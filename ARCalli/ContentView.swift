@@ -20,15 +20,27 @@ struct ContentView: View {
         TabView {
             HomePageView()
                 .tabItem {
+                    Image("today")
                     Text("主页")
                 }
             CommunityView()
                 .tabItem {
+                    Image("community")
                     Text("社区")
                 }
             NewItemView()
                 .tabItem {
-                    Text("+")
+                    Image("adding")
+                }
+            FollowingView()
+                .tabItem {
+                    Image("follow")
+                    Text("关注")
+                }
+            MyInfoView()
+                .tabItem {
+                    Image("mypage")
+                    Text("我的")
                 }
         }
         /*List {
@@ -47,7 +59,7 @@ struct ContentView: View {
             }
         }*/
     }
-
+    /*
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
@@ -78,6 +90,7 @@ struct ContentView: View {
             }
         }
     }
+    */
 }
 
 private let itemFormatter: DateFormatter = {
