@@ -13,23 +13,35 @@ struct MyInfoView: View {
             Image("UserViewBGImg")
             VStack {
                 MyInfoTitleView()
-                    .padding(44)
+                    .frame(width: 650, height: 250, alignment: .center)
+                    .background(Color.white.shadow(radius: 6))
                 HStack {
                     VStack {
                         MyInfoMyWorksView()
-                            .padding(44)
+                            .frame(width: 300, height: 240, alignment: .center)
+                            .background(Color.white.shadow(radius: 6))
+                            .padding(25)
                         MyReplysView()
-                            .padding(44)
+                            .frame(width: 300, height: 187, alignment: .center)
+                            .background(Color.white.shadow(radius: 6))
+                            .padding(25)
                     }
+                    //.padding(25)
                     VStack {
                         MyCollectionsView()
-                            .padding(44)
+                            .frame(width: 300, height: 187, alignment: .center)
+                            .background(Color.white.shadow(radius: 6))
+                            .padding(25)
                         MyEvaluationsView()
-                            .padding(44)
+                            .frame(width: 300, height: 240, alignment: .center)
+                            .background(Color.white.shadow(radius: 6))
+                            .padding(25)
                     }
+                    //.padding(25)
                 }
                 ContactUsView()
-                    .padding(44)
+                    .frame(width: 650, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .background(Color.white.shadow(radius: 6))
             }
             .padding(48)
         }

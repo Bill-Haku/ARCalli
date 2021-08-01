@@ -38,4 +38,4 @@ class userInfo {
     }
 }
 
-var userInfoDemo = userInfo(name: "神笔马良", userHeadImg: nil, level: "笔友（LV.2）", motto: "每天进步一点点", following: 55, followed: 12, myWorksTot: 24, myWorksARed: 13, collections: 68, myReplys: 108, evaluations: 163, evaluationImg: nil)
+var userInfoDemo = userInfo(name: "神笔马良", userHeadImg: UIImage(named: "MaLiang"), level: "笔友（LV.2）", motto: "每天进步一点点", following: 55, followed: 12, myWorksTot: 24, myWorksARed: 13, collections: 68, myReplys: 108, evaluations: 163, evaluationImg: UIImage(named: "DataLine"))
