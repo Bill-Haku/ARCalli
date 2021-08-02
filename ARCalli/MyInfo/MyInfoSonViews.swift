@@ -51,7 +51,6 @@ struct MyInfoTitleView: View {
             .padding()
         }
         .padding(45)
-        .background(Color.white)
     }
 }
 
@@ -89,7 +88,6 @@ struct MyInfoMyWorksView: View {
             }
         }
         .padding(28)
-        .background(Color.white)
     }
 }
 
@@ -116,7 +114,6 @@ struct MyCollectionsView: View {
             }
         }
         .padding(21)
-        .background(Color.white)
     }
 }
 
@@ -143,7 +140,6 @@ struct MyReplysView: View {
             }
         }
         .padding(28)
-        .background(Color.white)
     }
 }
 
@@ -178,7 +174,6 @@ struct MyEvaluationsView: View {
             }
         }
         .padding(21)
-        .background(Color.white)
     }
 }
 
@@ -195,7 +190,6 @@ struct ContactUsView: View {
                 .frame(width: 44, height: 44, alignment: .center)
         }
         .padding(28)
-        .background(Color.white)
     }
 }
 

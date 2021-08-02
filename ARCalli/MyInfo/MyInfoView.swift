@@ -10,7 +10,13 @@ import SwiftUI
 struct MyInfoView: View {
     var body: some View {
         ZStack {
-            Image("UserViewBGImg")
+            //Image("UserViewBGImg")
+            VStack {
+                Color(red: 233/255, green: 227/255, blue: 216/255)
+                    .frame(height: 224)
+                Spacer()
+            }
+            .ignoresSafeArea(.all)
             VStack {
                 MyInfoTitleView()
                     .frame(width: 650, height: 250, alignment: .center)

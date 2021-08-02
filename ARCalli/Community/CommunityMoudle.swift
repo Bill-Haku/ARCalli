@@ -18,7 +18,10 @@ class userStruct: ObservableObject {
         self.name = name
     }
 }
-var defaultUser = userStruct(headimage: nil, name: "admin")
+var defaultUser = userStruct(headimage: nil, name: "可爱的小毛")
+var defaultUser2 = userStruct(headimage: nil, name: "可爱的小锋")
+var defaultUser3 = userStruct(headimage: nil, name: "可爱的小春")
+var defaultUser4 = userStruct(headimage: nil, name: "可爱的小方")
 
 // 卡片类
 class PostStruct: ObservableObject {
@@ -37,7 +40,10 @@ class PostStruct: ObservableObject {
     }
 }
 //  几个测试用例
-var defaultPost1 = PostStruct(coverImage: nil, title: "毛笔的选用方法", user: defaultUser, likeNum: 163, commentNum: 41)
-var defaultPost2 = PostStruct(coverImage: UIImage(named: "CalliEg2"), title: "毛笔的选用方法啊个肚饿好讽刺啊鹅好的UI啊好多遍", user: defaultUser, likeNum: 56, commentNum: 1)
-var defaultPost3 = PostStruct(coverImage: UIImage(named: "CalliEg"), title: "毛笔的选用方法啊鹅湖举办的二哥", user: defaultUser, likeNum: 7163, commentNum: 415)
-var postCards:[PostStruct] = [defaultPost1, defaultPost2, defaultPost3]
+var defaultPost1 = PostStruct(coverImage: UIImage(named: "image1"), title: "毛笔的选用方法——新手向", user: defaultUser, likeNum: 163, commentNum: 41)
+var defaultPost2 = PostStruct(coverImage: UIImage(named: "image2"), title: "举笔运锋——草书入门", user: defaultUser2, likeNum: 56, commentNum: 1)
+var defaultPost3 = PostStruct(coverImage: UIImage(named: "image3"), title: "“春之道”——春字的写法", user: defaultUser3, likeNum: 7163, commentNum: 415)
+var defaultPost4 = PostStruct(coverImage: UIImage(named: "image4"), title: "浅谈书法室内摆放之道", user: defaultUser, likeNum: 67, commentNum: 9)
+var defaultPost5 = PostStruct(coverImage: UIImage(named: "image5"), title: "家中必不可少墨宝", user: defaultUser4, likeNum: 103, commentNum: 24)
+
+var postCards:[PostStruct] = [defaultPost1, defaultPost2, defaultPost3, defaultPost4, defaultPost5]
